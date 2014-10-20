@@ -14,6 +14,18 @@
     echo "<br>";
     $variable = 40;
     echo $variable;
-?>
+    echo "<br>";
+    $variable = 24;
+    echo $variable;
+    echo "<br>";
+    $variable = 26;
+    echo $variable;
+    ?>
+	<h2>Stringid</h2>
+	<?php 
+	echo "Hello world!<br>";
+	echo 'Goodbye world!<br>';
+	echo "2426";
+	?>
 </body>
 </html>
