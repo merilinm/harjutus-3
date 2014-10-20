@@ -115,6 +115,53 @@
     	// Suvaline number vahemikus 2 - 100:
     	echo rand(2, 100);
 
+    	// Numbrite kasvatamine ja kahandamine
+    	$sample_nr = 45;
+    	echo "<br>";
+
+    	// 5 võrra kasvatamine (variant1)
+    	$sample_nr = 45;
+  		$sample_nr = $sample_nr + 5;
+ 		echo $sample_nr;
+ 		echo "<br>";
+
+    	// 5 võrra kasvatamine (variant2)
+	    $sample_nr2 = 45;
+    	$sample_nr2 += 5;
+    	echo $sample_nr2;
+    	echo "<br>";
+
+    	// 5 võrra kahandamine 
+    	$sample_nr2 = 45;
+    	$sample_nr2 -= 5;
+    	echo $sample_nr2;
+    	echo "<br>";
+
+    	// Korrutamine ja jagamine
+    	$sample_nr3 = 45;
+    	$sample_nr3 *= 5;
+  		echo $sample_nr3;
+  		echo "<br>";
+
+    	$sample_nr2 = 45;
+    	$sample_nr2 /= 5;
+    	echo $sample_nr2;
+	?>
+	<h2>Numbri ja stringi liitmine</h2>
+	<?php
+		echo 5 . " teksapüksid";
+		echo "<br>";
+
+		// Matemaatiline liitmine
+		echo 5 + " teksapüksid";
+		echo "<br>";
+
+		// Kui string sisaldab ainult numbrit
+		echo 5 + "5";
+		echo "<br>";
+
+		// Kui stringis on selgelt eristatav number, kuid sisaldab ka tähti
+		echo 5 + "7 teksapüksi";
 	?>
 </body>
 </html>
