@@ -51,7 +51,70 @@
 	<h2>Stringi interpolatsioon</h2>
 	<?php
 		$test = "Testing";
-		echo "$test testing yks kaks kolm";
+		echo "$test testing yks kaks kolm <br>";
+		$katse = "proov";
+		echo "Me peame {$katse}ima, kas ka nii saab.";
+	?>
+	<h2>Stringi funktsioonid</h2>
+	<?php
+		$source = "this text CONTAINS LETTERS!!";
+		$lower = strtolower($source);
+		echo "<p>{$lower}</p>";
+
+		$source = "this text CONTAINS LETTERS!!";
+		$upper = strtoupper($source);
+		echo "<p>{$upper}</p>";
+
+		$source = "this text contains letters!!";
+		$first = ucfirst($source);
+		echo "<p>{$first}</p>";
+
+		$source = "this text contains letters!!";
+		$words = ucwords($source);
+		echo "<p>{$words}</p>";
+
+		$source = "this text contains letters!!";
+		$length = strlen($source);
+		echo "<p>{$length}</p>";
+
+		echo "A" . trim(" B C D E") . "F";
+	?>
+	<h2>Täisarvud</h2>
+	<?php
+		$nr1 = 4;
+		$nr2 = 16;
+
+		echo (4 + 16)*2;
+		echo "<br>";
+
+		echo abs(-500);
+		echo "<br>";
+
+		// Kolm kuubis:
+   		echo pow(3, 3);
+   		echo "<br>";
+
+   		// Üheksa ruudus:
+    	echo pow(9, 2);
+    	echo "<br>";
+
+   		// Neli astmel viis:
+   		echo pow(4, 5);
+   		echo "<br>";
+
+   		// Ruutjuur 64-st:
+    	echo sqrt(64);
+    	echo "<br>";
+
+    	// Suvaline number
+    	echo rand();
+
+    	// Lihtsalt reavahetus, et vältida segadust piiranguteta ja piiranguga numbritel vahet tegemisel.
+    	echo "<br>";
+
+    	// Suvaline number vahemikus 2 - 100:
+    	echo rand(2, 100);
+
 	?>
 </body>
 </html>
